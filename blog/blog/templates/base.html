@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kr">
+{% load staticfiles %}
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Count Yourself :: 글자를 세드립니다!</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css'%}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gamja+Flower|Fredoka+One&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="{% static 'css/stylish-portfolio.min.css'%}" rel="stylesheet">
+
+  <style>
+    .indexfont {
+        font-family: 'Do Hyeon', sans-serif;
+    }
+
+    .resultfont {
+        font-family: 'Gamja Flower', cursive;
+    }
+
+    .eng {
+        font-family: 'Fredoka One', cursive;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav indexfont">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger">Count Yourself</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="{% url 'index' %}">홈</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="{% url 'lists' %}">낙서장</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="{% url 'about' %}">어바웃</a>
+      </li>
+      <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="{% url 'credit' %}">크레딧</a>
+          </li>
+    </ul>
+  </nav>
+
+ 
+ 
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js'%}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/stylish-portfolio.min.js'%}"></script>
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>

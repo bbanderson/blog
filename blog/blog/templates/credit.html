@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% block content %}
+{% load staticfiles %}
+    <header class="masthead d-flex">
+        <div class="container text-center my-auto">
+            <div class="row mt-3">
+                <div class="col-md-4"><a href="https://www.youtube.com/user/WLBBAN"><img src="{% static 'img/bb.png'%}" class="img-fluid my-3 bg-light rounded-circle" alt="Rejoice Bb" width="225px"></a></div>
+                <div class="col-md-4"><a href="https://www.facebook.com/byuntom95"><img src="{% static 'img/facebook.png'%}" class="img-fluid my-3 rounded-circle" alt="facebook"></a></div>
+                <div class="col-md-4"><a href="https://www.instagram.com/bb.anderson/"><img src="{% static 'img/insta.jpg'%}" class="img-fluid my-3 rounded-circle" alt="instagram"></a></div>
+            </div>
+            <div class="overlay"></div>
+    </header>
+{% endblock %}
